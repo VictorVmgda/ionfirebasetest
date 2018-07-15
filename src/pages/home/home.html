@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Teste com Firebase
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <form (ngSubmit)="login()">
+
+    <ion-item>
+      <ion-label floating>E-mail:</ion-label>
+      <ion-input type="email" name="usuario.email" [(ngModel)]="usuario.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Senha:</ion-label>
+      <ion-input type="password" name="usuario.senha" [(ngModel)]="usuario.senha"></ion-input>
+    </ion-item>
+
+    <button ion-button block color="dark" type="submit">Logar</button>
+    <button ion-button block color="light" (click)="ir_cadastro()">Cadastrar</button>
+
+  </form>
+
+</ion-content>
